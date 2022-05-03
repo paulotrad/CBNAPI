@@ -29,6 +29,6 @@ async def cbn_news(types:str,asc:Optional[bool]=False,count:Optional[int]=None):
     return {}
 
 
-@app.get("/hello/{name}")
+@app.get("/")
 async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+    return {}
