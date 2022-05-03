@@ -31,4 +31,4 @@ async def cbn_news(types:str,asc:Optional[bool]=False,count:Optional[int]=None):
 
 @app.get("/")
 async def say_hello(name: str):
-    return {}
+    return {1}

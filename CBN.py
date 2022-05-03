@@ -9,7 +9,7 @@ def news(ascending=False,counter=None,queryurl=None):
     r=requests.get(f'https://www1.cbn.com/{queryurl}')
 
     if r.status_code==200:
-        print(r.headers)
+
 
         soup=BeautifulSoup(r.content,'html.parser')
         news['results']=soup.find('div', class_='section-header-wrapper clearfix').find('span').text.strip()
